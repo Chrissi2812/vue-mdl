@@ -2009,10 +2009,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return '' + this.value;
 	    }
 	  },
-	  ready: function ready() {
-	    if (this.autosize && this.textarea) (0, _autosize2.default)(this.$el.querySelector('textarea'));
-	  },
-	
 	  methods: {
 	    fireInputEvent: function fireInputEvent(event) {
 	      this.$emit('input', event.target.value);
@@ -2020,6 +2016,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	  mounted: function mounted() {
 	    componentHandler.upgradeElement(this.$el);
+	    if (this.autosize && this.textarea) (0, _autosize2.default)(this.$el.querySelector('textarea'));
 	  }
 	};
 
