@@ -12,6 +12,7 @@
                   type="text"
                   :value="value"
                   @input="fireInputEvent"
+                  @change="fireChangeEvent"
                   :required="required"
                   :id="id"
                   :rows="rows"
@@ -23,6 +24,7 @@
                :type="type"
                :value="value"
                @input="fireInputEvent"
+               @change="fireChangeEvent"
                :id="id" :pattern="pattern"
                :disabled="disabled"
                :required="required"
@@ -98,7 +100,11 @@ export default {
   },
   methods: {
     fireInputEvent: function (event) {
-      this.$emit('input', event)
+      this.$emit('input', event.target.value)
+      this.$emit('originput', event)
+    },
+    fireChangeEvent: function (event) {
+      this.$emit('change', event)
     }
   },
   mounted () {
