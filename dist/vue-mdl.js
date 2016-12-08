@@ -2019,6 +2019,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    fireBlurEvent: function fireBlurEvent(event) {
 	      this.$emit('blur', event);
+	    },
+	    fireFocusEvent: function fireFocusEvent(event) {
+	      this.$emit('focus', event);
 	    }
 	  },
 	  mounted: function mounted() {
@@ -2356,7 +2359,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    on: {
 	      "input": _vm.fireInputEvent,
 	      "change": _vm.fireChangeEvent,
-	      "blur": _vm.fireBlurEvent
+	      "blur": _vm.fireBlurEvent,
+	      "focus": _vm.fireFocusEvent
 	    }
 	  })]) : _vm._t("input", [_vm._h('input', {
 	    staticClass: "mdl-textfield__input",
@@ -2375,7 +2379,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    on: {
 	      "input": _vm.fireInputEvent,
 	      "change": _vm.fireChangeEvent,
-	      "blur": _vm.fireBlurEvent
+	      "blur": _vm.fireBlurEvent,
+	      "focus": _vm.fireFocusEvent
 	    }
 	  })]), " ", " ", _vm._t("label", [_vm._h('label', {
 	    staticClass: "mdl-textfield__label",
