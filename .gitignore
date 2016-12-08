@@ -10,3 +10,4 @@ doc/doc-bundle.js.map
 images/
 .tern-port
 npm-debug.log
+*.sublime-workspace
