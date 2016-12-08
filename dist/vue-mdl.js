@@ -2016,6 +2016,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    fireChangeEvent: function fireChangeEvent(event) {
 	      this.$emit('change', event);
+	    },
+	    fireBlurEvent: function fireBlurEvent(event) {
+	      this.$emit('blur', event);
 	    }
 	  },
 	  mounted: function mounted() {
@@ -2352,7 +2355,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    on: {
 	      "input": _vm.fireInputEvent,
-	      "change": _vm.fireChangeEvent
+	      "change": _vm.fireChangeEvent,
+	      "blur": _vm.fireBlurEvent
 	    }
 	  })]) : _vm._t("input", [_vm._h('input', {
 	    staticClass: "mdl-textfield__input",
@@ -2370,7 +2374,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    on: {
 	      "input": _vm.fireInputEvent,
-	      "change": _vm.fireChangeEvent
+	      "change": _vm.fireChangeEvent,
+	      "blur": _vm.fireBlurEvent
 	    }
 	  })]), " ", " ", _vm._t("label", [_vm._h('label', {
 	    staticClass: "mdl-textfield__label",
