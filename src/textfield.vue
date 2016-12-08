@@ -13,6 +13,7 @@
                   :value="value"
                   @input="fireInputEvent"
                   @change="fireChangeEvent"
+                  @blur="fireBlurEvent"
                   :required="required"
                   :id="id"
                   :rows="rows"
@@ -25,6 +26,7 @@
                :value="value"
                @input="fireInputEvent"
                @change="fireChangeEvent"
+               @blur="fireBlurEvent"
                :id="id" :pattern="pattern"
                :disabled="disabled"
                :required="required"
@@ -105,6 +107,9 @@ export default {
     },
     fireChangeEvent: function (event) {
       this.$emit('change', event)
+    },
+    fireBlurEvent: function (event) {
+      this.$emit('blur', event)
     }
   },
   mounted () {
