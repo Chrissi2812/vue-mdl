@@ -2011,7 +2011,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	  methods: {
 	    fireInputEvent: function fireInputEvent(event) {
-	      this.$emit('input', event.target.value);
+	      this.$emit('input', event);
 	    }
 	  },
 	  mounted: function mounted() {
