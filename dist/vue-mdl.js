@@ -2011,7 +2011,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	  methods: {
 	    fireInputEvent: function fireInputEvent(event) {
-	      this.$emit('input', event);
+	      this.$emit('input', event.target.value);
+	      this.$emit('originput', event);
+	    },
+	    fireChangeEvent: function fireChangeEvent(event) {
+	      this.$emit('change', event);
 	    }
 	  },
 	  mounted: function mounted() {
@@ -2347,7 +2351,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "value": _vm.value
 	    },
 	    on: {
-	      "input": _vm.fireInputEvent
+	      "input": _vm.fireInputEvent,
+	      "change": _vm.fireChangeEvent
 	    }
 	  })]) : _vm._t("input", [_vm._h('input', {
 	    staticClass: "mdl-textfield__input",
@@ -2364,7 +2369,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "value": _vm.value
 	    },
 	    on: {
-	      "input": _vm.fireInputEvent
+	      "input": _vm.fireInputEvent,
+	      "change": _vm.fireChangeEvent
 	    }
 	  })]), " ", " ", _vm._t("label", [_vm._h('label', {
 	    staticClass: "mdl-textfield__label",
