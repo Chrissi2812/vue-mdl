@@ -98,7 +98,7 @@ export default {
   },
   methods: {
     fireInputEvent: function (event) {
-      this.$emit('input', event.target.value)
+      this.$emit('input', event)
     }
   },
   mounted () {
