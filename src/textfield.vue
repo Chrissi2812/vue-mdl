@@ -14,6 +14,7 @@
                   @input="fireInputEvent"
                   @change="fireChangeEvent"
                   @blur="fireBlurEvent"
+                  @focus="fireFocusEvent"
                   :required="required"
                   :id="id"
                   :rows="rows"
@@ -27,6 +28,7 @@
                @input="fireInputEvent"
                @change="fireChangeEvent"
                @blur="fireBlurEvent"
+               @focus="fireFocusEvent"
                :id="id" :pattern="pattern"
                :disabled="disabled"
                :required="required"
@@ -110,6 +112,9 @@ export default {
     },
     fireBlurEvent: function (event) {
       this.$emit('blur', event)
+    },
+    fireFocusEvent: function (event) {
+      this.$emit('focus', event)
     }
   },
   mounted () {
