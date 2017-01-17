@@ -829,7 +829,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('label', {
 	    staticClass: "mdl-checkbox mdl-js-checkbox is-upgraded",
 	    class: _vm.cssClasses,
@@ -851,10 +851,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    domProps: {
 	      "value": _vm.val,
-	      "checked": Array.isArray(_vm.checked) ? _vm._i(_vm.checked, _vm.val) > -1 : _vm._q(_vm.checked, true)
+	      "checked": Array.isArray(_vm.checked) ? _vm._i(_vm.checked, _vm.val) > -1 : (_vm.checked)
 	    },
 	    on: {
-	      "change": [function($event) {
+	      "change": _vm.fireChange,
+	      "click": function($event) {
 	        var $$a = _vm.checked,
 	          $$el = $event.target,
 	          $$c = $$el.checked ? (true) : (false);
@@ -869,12 +870,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        } else {
 	          _vm.checked = $$c
 	        }
-	      }, _vm.fireChange]
+	      }
 	    }
 	  }), _vm._v(" "), _c('span', {
 	    staticClass: "mdl-checkbox__label"
-	  }, [_vm._t("default")], true)])
+	  }, [_vm._t("default")], 2)])
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -980,7 +982,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('label', {
 	    staticClass: "mdl-radio mdl-js-radio is-upgraded",
 	    class: _vm.cssClasses,
@@ -1006,14 +1008,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "checked": _vm._q(_vm.checked, _vm.val)
 	    },
 	    on: {
-	      "change": [function($event) {
+	      "change": _vm.fireChange,
+	      "click": function($event) {
 	        _vm.checked = _vm.val
-	      }, _vm.fireChange]
+	      }
 	    }
 	  }), _vm._v(" "), _c('span', {
 	    staticClass: "mdl-radio__label"
-	  }, [_vm._t("default")], true)])
+	  }, [_vm._t("default")], 2)])
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1194,7 +1198,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('button', {
 	    staticClass: "mdl-button mdl-js-button",
 	    class: _vm.cssClasses,
@@ -1203,8 +1207,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }, [_vm._t("default", [(_vm.isIconSpecified) ? _c('i', {
 	    staticClass: "material-icons"
-	  }, [_vm._v(_vm._s(_vm.icon))]) : _vm._e()])], true)
+	  }, [_vm._v(_vm._s(_vm.icon))]) : _vm._e()])], 2)
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1280,7 +1285,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('a', {
 	    staticClass: "mdl-button mdl-js-button",
 	    class: _vm.cssClasses,
@@ -1289,8 +1294,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }, [_vm._t("default", [(_vm.isIconSpecified) ? _c('i', {
 	    staticClass: "material-icons"
-	  }, [_vm._v(_vm._s(_vm.icon))]) : _vm._e()])], true)
+	  }, [_vm._v(_vm._s(_vm.icon))]) : _vm._e()])], 2)
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1386,7 +1392,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "mdl-progress mdl-js-progress",
 	    class: {
@@ -1394,6 +1400,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  })
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1471,7 +1478,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "mdl-spinner mdl-js-spinner",
 	    class: {
@@ -1479,6 +1486,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  })
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1564,7 +1572,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('label', {
 	    staticClass: "mdl-icon-toggle mdl-js-icon-toggle is-upgraded",
 	    class: _vm.cssClasses,
@@ -1586,10 +1594,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    domProps: {
 	      "value": _vm.val,
-	      "checked": Array.isArray(_vm.checked) ? _vm._i(_vm.checked, _vm.val) > -1 : _vm._q(_vm.checked, true)
+	      "checked": Array.isArray(_vm.checked) ? _vm._i(_vm.checked, _vm.val) > -1 : (_vm.checked)
 	    },
 	    on: {
-	      "change": [function($event) {
+	      "change": _vm.fireChange,
+	      "click": function($event) {
 	        var $$a = _vm.checked,
 	          $$el = $event.target,
 	          $$c = $$el.checked ? (true) : (false);
@@ -1604,12 +1613,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        } else {
 	          _vm.checked = $$c
 	        }
-	      }, _vm.fireChange]
+	      }
 	    }
 	  }), _vm._v(" "), _c('i', {
 	    staticClass: "mdl-icon-toggle__label material-icons"
 	  }, [_vm._v(_vm._s(_vm.icon))])])
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1725,7 +1735,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "mdl-slider__container"
 	  }, [_c('input', {
@@ -1763,6 +1773,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    style: (_vm.upperBackgroundStyle)
 	  })])])
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1842,7 +1853,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('label', {
 	    staticClass: "mdl-switch mdl-js-switch is-upgraded",
 	    class: _vm.cssClasses,
@@ -1864,10 +1875,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    domProps: {
 	      "value": _vm.val,
-	      "checked": Array.isArray(_vm.checked) ? _vm._i(_vm.checked, _vm.val) > -1 : _vm._q(_vm.checked, true)
+	      "checked": Array.isArray(_vm.checked) ? _vm._i(_vm.checked, _vm.val) > -1 : (_vm.checked)
 	    },
 	    on: {
-	      "change": [function($event) {
+	      "change": _vm.fireChange,
+	      "click": function($event) {
 	        var $$a = _vm.checked,
 	          $$el = $event.target,
 	          $$c = $$el.checked ? (true) : (false);
@@ -1882,12 +1894,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        } else {
 	          _vm.checked = $$c
 	        }
-	      }, _vm.fireChange]
+	      }
 	    }
 	  }), _vm._v(" "), _c('span', {
 	    staticClass: "mdl-switch__label"
-	  }, [_vm._t("default")], true)])
+	  }, [_vm._t("default")], 2)])
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2329,7 +2342,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "mdl-textfield mdl-js-textfield",
 	    class: {
@@ -2384,15 +2397,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "blur": _vm.fireBlurEvent,
 	      "focus": _vm.fireFocusEvent
 	    }
-	  })]), _vm._v(" "), _vm._v(" "), _vm._t("label", [_c('label', {
+	  })]), _vm._v(" "), _vm._t("label", [_c('label', {
 	    staticClass: "mdl-textfield__label",
 	    attrs: {
 	      "for": _vm.id
 	    }
 	  }, [_vm._v(_vm._s(_vm.displayLabel))])]), _vm._v(" "), _vm._t("error", [(_vm.error) ? _c('label', {
 	    staticClass: "mdl-textfield__error"
-	  }, [_vm._v(_vm._s(_vm.error))]) : _vm._e()])], true)], true)
+	  }, [_vm._v(_vm._s(_vm.error))]) : _vm._e()])], 2)], 2)
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2470,7 +2484,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "mdl-tooltip",
 	    class: {
@@ -2479,8 +2493,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    attrs: {
 	      "for": _vm.target
 	    }
-	  }, [_vm._t("default")], true)
+	  }, [_vm._t("default")], 2)
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2552,14 +2567,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('ul', {
 	    staticClass: "mdl-menu mdl-js-menu",
 	    attrs: {
 	      "for": _vm.target
 	    }
-	  }, [_vm._t("default")], true)
+	  }, [_vm._t("default")], 2)
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2626,11 +2642,12 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('li', {
 	    staticClass: "mdl-menu__item"
-	  }, [_vm._t("default")], true)
+	  }, [_vm._t("default")], 2)
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2758,7 +2775,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "mdl-card mdl-shadow--2dp"
 	  }, [(_vm.title) ? _vm._t("title", [_c('div', {
@@ -2794,7 +2811,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _vm.triggerActionsEvent($event)
 	      }
 	    }
-	  }, [_vm._v(_vm._s(_vm.actionsText))])])]) : _vm._e(), (_vm.menu) ? _vm._t("menu", [_c('div', {
+	  }, [_vm._v(_vm._s(_vm.actionsText))])], 1)]) : _vm._e(), (_vm.menu) ? _vm._t("menu", [_c('div', {
 	    staticClass: "mdl-card__menu"
 	  }, [_c('mdl-button', {
 	    staticClass: "mdl-js-ripple-effect",
@@ -2808,8 +2825,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }, [_c('i', {
 	    staticClass: "material-icons"
-	  }, [_vm._v("share")])])])]) : _vm._e()], true)
+	  }, [_vm._v("share")])])], 1)]) : _vm._e()], 2)
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2898,9 +2916,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _vm._m(0)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "mdl-snackbar mdl-js-snackbar",
 	    attrs: {
@@ -2917,6 +2935,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  })])
 	}]}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -3373,7 +3392,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    ref: "textfield",
 	    staticClass: "mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
@@ -3431,6 +3450,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }, [_vm._v(_vm._s(option.name))])
 	  }))])
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -3883,7 +3903,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    directives: [{
 	      name: "show",
@@ -3898,7 +3918,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "mdl-dialog__title"
 	  }, [_vm._v(_vm._s(_vm.title))]), _vm._v(" "), _c('div', {
 	    staticClass: "mdl-dialog__content"
-	  }, [_vm._t("default")], true), _vm._v(" "), _c('div', {
+	  }, [_vm._t("default")], 2), _vm._v(" "), _c('div', {
 	    staticClass: "mdl-dialog__actions",
 	    class: _vm.actionsClasses
 	  }, [_vm._t("actions", [_c('mdl-button', {
@@ -3909,8 +3929,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _vm.close($event)
 	      }
 	    }
-	  }, [_vm._v("Close")])])], true)])])
+	  }, [_vm._v("Close")])])], 2)])])
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -4103,7 +4124,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('a', {
 	    staticClass: "mdl-tabs__tab",
 	    attrs: {
@@ -4122,6 +4143,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "mdl-ripple"
 	  })])])
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -4133,7 +4155,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "mdl-tabs is-upgraded"
 	  }, [_c('div', {
@@ -4155,8 +4177,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	      }
 	    })
-	  })), _vm._v(" "), _vm._v(" "), _vm._t("default")], true)
+	  })), _vm._v(" "), _vm._t("default")], 2)
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -4363,14 +4386,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "mdl-tabs__panel",
 	    class: {
 	      'is-active': _vm.selected
 	    }
-	  }, [_vm._t("default")], true)
+	  }, [_vm._t("default")], 2)
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -4464,7 +4488,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._c;
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('span', {
 	    staticClass: "mdl-chip",
 	    class: _vm.chipClasses
@@ -4477,7 +4501,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }) : _vm._e()]), _vm._v(" "), _c('span', {
 	    staticClass: "mdl-chip__text"
-	  }, [_vm._t("default")], true), _vm._v(" "), (_vm.deletable) ? _c('a', {
+	  }, [_vm._t("default")], 2), _vm._v(" "), (_vm.deletable) ? _c('a', {
 	    staticClass: "mdl-chip__action",
 	    attrs: {
 	      "href": "#"
@@ -4490,8 +4514,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }, [_c('i', {
 	    staticClass: "material-icons"
-	  }, [_vm._v(_vm._s(_vm.deleteIcon))])]) : _vm._e()], true)
+	  }, [_vm._v(_vm._s(_vm.deleteIcon))])]) : _vm._e()], 2)
 	},staticRenderFns: []}
+	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
