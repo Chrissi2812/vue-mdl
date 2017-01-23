@@ -51,7 +51,7 @@ import autosize from 'autosize'
 export default {
   props: {
     autosize: {
-      type: [Boolean, String],
+      type: Boolean,
       required: false,
       default: false
     },
