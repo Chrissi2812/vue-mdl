@@ -16,7 +16,7 @@
           v-for="(tab, index) in tabs"
           :key="index"
           :tab="tab"
-      >
+      ></mdl-tab>
     </mdl-tabs>
 
     <mdl-tabs id="dyn-tabs" ref="tabs" v-model="selected">
