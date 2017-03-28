@@ -855,7 +855,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    on: {
 	      "change": _vm.fireChange,
-	      "click": function($event) {
+	      "__c": function($event) {
 	        var $$a = _vm.checked,
 	          $$el = $event.target,
 	          $$c = $$el.checked ? (true) : (false);
@@ -876,7 +876,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "mdl-checkbox__label"
 	  }, [_vm._t("default")], 2)])
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1009,7 +1008,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    on: {
 	      "change": _vm.fireChange,
-	      "click": function($event) {
+	      "__c": function($event) {
 	        _vm.checked = _vm.val
 	      }
 	    }
@@ -1017,7 +1016,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "mdl-radio__label"
 	  }, [_vm._t("default")], 2)])
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1209,7 +1207,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "material-icons"
 	  }, [_vm._v(_vm._s(_vm.icon))]) : _vm._e()])], 2)
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1296,7 +1293,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "material-icons"
 	  }, [_vm._v(_vm._s(_vm.icon))]) : _vm._e()])], 2)
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1400,7 +1396,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  })
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1486,7 +1481,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  })
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1598,7 +1592,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    on: {
 	      "change": _vm.fireChange,
-	      "click": function($event) {
+	      "__c": function($event) {
 	        var $$a = _vm.checked,
 	          $$el = $event.target,
 	          $$c = $$el.checked ? (true) : (false);
@@ -1619,7 +1613,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "mdl-icon-toggle__label material-icons"
 	  }, [_vm._v(_vm._s(_vm.icon))])])
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1756,12 +1749,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "disabled": _vm.disabled
 	    },
 	    domProps: {
-	      "value": _vm._s(_vm.model)
+	      "value": (_vm.model)
 	    },
 	    on: {
-	      "input": [function($event) {
+	      "input": _vm.onInput,
+	      "__r": function($event) {
 	        _vm.model = $event.target.value
-	      }, _vm.onInput]
+	      }
 	    }
 	  }), _vm._v(" "), _c('div', {
 	    staticClass: "mdl-slider__background-flex"
@@ -1773,7 +1767,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    style: (_vm.upperBackgroundStyle)
 	  })])])
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -1879,7 +1872,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    on: {
 	      "change": _vm.fireChange,
-	      "click": function($event) {
+	      "__c": function($event) {
 	        var $$a = _vm.checked,
 	          $$el = $event.target,
 	          $$c = $$el.checked ? (true) : (false);
@@ -1900,7 +1893,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "mdl-switch__label"
 	  }, [_vm._t("default")], 2)])
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2406,7 +2398,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "mdl-textfield__error"
 	  }, [_vm._v(_vm._s(_vm.error))]) : _vm._e()])], 2)], 2)
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2495,7 +2486,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }, [_vm._t("default")], 2)
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2575,7 +2565,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }, [_vm._t("default")], 2)
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2647,7 +2636,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "mdl-menu__item"
 	  }, [_vm._t("default")], 2)
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2827,7 +2815,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "material-icons"
 	  }, [_vm._v("share")])])], 1)]) : _vm._e()], 2)
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -2935,7 +2922,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  })])
 	}]}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -3411,11 +3397,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "readonly": ""
 	    },
 	    domProps: {
-	      "value": _vm._s(_vm.name)
+	      "value": (_vm.name)
 	    },
 	    on: {
 	      "keydown": function($event) {
-	        if (_vm._k($event.keyCode, "enter", 13) && _vm._k($event.keyCode, "space", 32)) { return; }
+	        if (!('button' in $event) && _vm._k($event.keyCode, "enter", 13) && _vm._k($event.keyCode, "space", 32)) { return null; }
 	        _vm.open($event)
 	      },
 	      "input": function($event) {
@@ -3450,7 +3436,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }, [_vm._v(_vm._s(option.name))])
 	  }))])
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -3627,29 +3612,32 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var tabbableNodes = [];
 	  var nodeFocusedBeforeActivation = null;
 	  var active = false;
+	  var paused = false;
 	
 	  var container = (typeof element === 'string')
 	    ? document.querySelector(element)
 	    : element;
 	
 	  var config = userOptions || {};
-	  config.returnFocusOnDeactivate = (userOptions && userOptions.returnFocusOnDeactivate != undefined)
+	  config.returnFocusOnDeactivate = (userOptions && userOptions.returnFocusOnDeactivate !== undefined)
 	    ? userOptions.returnFocusOnDeactivate
 	    : true;
-	  config.escapeDeactivates = (userOptions && userOptions.escapeDeactivates != undefined)
+	  config.escapeDeactivates = (userOptions && userOptions.escapeDeactivates !== undefined)
 	    ? userOptions.escapeDeactivates
 	    : true;
 	
 	  var trap = {
 	    activate: activate,
 	    deactivate: deactivate,
-	    pause: removeListeners,
-	    unpause: addListeners,
+	    pause: pause,
+	    unpause: unpause,
 	  };
 	
 	  return trap;
 	
 	  function activate(activateOptions) {
+	    if (active) return;
+	
 	    var defaultedActivateOptions = {
 	      onActivate: (activateOptions && activateOptions.onActivate !== undefined)
 	        ? activateOptions.onActivate
@@ -3657,6 +3645,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	
 	    active = true;
+	    paused = false;
 	    nodeFocusedBeforeActivation = document.activeElement;
 	
 	    if (defaultedActivateOptions.onActivate) {
@@ -3668,8 +3657,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	
 	  function deactivate(deactivateOptions) {
+	    if (!active) return;
+	
 	    var defaultedDeactivateOptions = {
-	      returnFocus: (deactivateOptions && deactivateOptions.returnFocus != undefined)
+	      returnFocus: (deactivateOptions && deactivateOptions.returnFocus !== undefined)
 	        ? deactivateOptions.returnFocus
 	        : config.returnFocusOnDeactivate,
 	      onDeactivate: (deactivateOptions && deactivateOptions.onDeactivate !== undefined)
@@ -3684,13 +3675,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	
 	    if (defaultedDeactivateOptions.returnFocus) {
-	      setTimeout(function() {
+	      setTimeout(function () {
 	        tryFocus(nodeFocusedBeforeActivation);
 	      }, 0);
 	    }
 	
 	    active = false;
+	    paused = false;
 	    return this;
+	  }
+	
+	  function pause() {
+	    if (paused || !active) return;
+	    paused = true;
+	    removeListeners();
+	  }
+	
+	  function unpause() {
+	    if (!paused || !active) return;
+	    paused = false;
+	    addListeners();
 	  }
 	
 	  function addListeners() {
@@ -3727,22 +3731,36 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return trap;
 	  }
 	
-	  function getNodeForOption(key) {
-	    var node = config[key];
-	    if (!node) {
+	  function getNodeForOption(optionName) {
+	    var optionValue = config[optionName];
+	    var node = optionValue;
+	    if (!optionValue) {
 	      return null;
 	    }
-	    if (typeof node === 'string') {
-	      node = document.querySelector(node);
+	    if (typeof optionValue === 'string') {
+	      node = document.querySelector(optionValue);
 	      if (!node) {
-	        throw new Error('`'+key+'` refers to no known node');
+	        throw new Error('`' + optionName + '` refers to no known node');
+	      }
+	    }
+	    if (typeof optionValue === 'function') {
+	      node = optionValue();
+	      if (!node) {
+	        throw new Error('`' + optionName + '` did not return a node');
 	      }
 	    }
 	    return node;
 	  }
 	
 	  function firstFocusNode() {
-	    var node = getNodeForOption('initialFocus') || tabbableNodes[0] || getNodeForOption('fallbackFocus');
+	    var node;
+	    if (getNodeForOption('initialFocus') !== null) {
+	      node = getNodeForOption('initialFocus');
+	    } else if (container.contains(document.activeElement)) {
+	      node = document.activeElement;
+	    } else {
+	      node = tabbableNodes[0] || getNodeForOption('fallbackFocus');
+	    }
 	
 	    if (!node) {
 	      throw new Error('You can\'t have a focus-trap without at least one focusable element');
@@ -3830,9 +3848,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = function(el) {
 	  var basicTabbables = [];
 	  var orderedTabbables = [];
-	  var isHidden = createIsHidden();
 	
-	  var candidates = el.querySelectorAll('input, select, a[href], textarea, button, [tabindex]');
+	  // A node is "available" if
+	  // - it's computed style
+	  var isUnavailable = createIsUnavailable();
+	
+	  var candidateSelectors = [
+	    'input',
+	    'select',
+	    'a[href]',
+	    'textarea',
+	    'button',
+	    '[tabindex]',
+	  ];
+	
+	  var candidates = el.querySelectorAll(candidateSelectors);
 	
 	  var candidate, candidateIndex;
 	  for (var i = 0, l = candidates.length; i < l; i++) {
@@ -3843,7 +3873,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      candidateIndex < 0
 	      || (candidate.tagName === 'INPUT' && candidate.type === 'hidden')
 	      || candidate.disabled
-	      || isHidden(candidate)
+	      || isUnavailable(candidate)
 	    ) {
 	      continue;
 	    }
@@ -3871,30 +3901,47 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return tabbableNodes;
 	}
 	
-	function createIsHidden() {
+	function createIsUnavailable() {
 	  // Node cache must be refreshed on every check, in case
 	  // the content of the element has changed
-	  var nodeCache = [];
+	  var isOffCache = [];
 	
-	  return function isHidden(node) {
+	  // "off" means `display: none;`, as opposed to "hidden",
+	  // which means `visibility: hidden;`. getComputedStyle
+	  // accurately reflects visiblity in context but not
+	  // "off" state, so we need to recursively check parents.
+	
+	  function isOff(node, nodeComputedStyle) {
 	    if (node === document.documentElement) return false;
 	
 	    // Find the cached node (Array.prototype.find not available in IE9)
-	    for (var i = 0, length = nodeCache.length; i < length; i++) {
-	      if (nodeCache[i][0] === node) return nodeCache[i][1];
+	    for (var i = 0, length = isOffCache.length; i < length; i++) {
+	      if (isOffCache[i][0] === node) return isOffCache[i][1];
 	    }
+	
+	    nodeComputedStyle = nodeComputedStyle || window.getComputedStyle(node);
 	
 	    var result = false;
-	    var style = window.getComputedStyle(node);
-	    if (style.visibility === 'hidden' || style.display === 'none') {
+	
+	    if (nodeComputedStyle.display === 'none') {
 	      result = true;
 	    } else if (node.parentNode) {
-	      result = isHidden(node.parentNode);
+	      result = isOff(node.parentNode);
 	    }
 	
-	    nodeCache.push([node, result]);
+	    isOffCache.push([node, result]);
 	
 	    return result;
+	  }
+	
+	  return function isUnavailable(node) {
+	    if (node === document.documentElement) return false;
+	
+	    var computedStyle = window.getComputedStyle(node);
+	
+	    if (isOff(node, computedStyle)) return true;
+	
+	    return computedStyle.visibility === 'hidden';
 	  }
 	}
 
@@ -3931,7 +3978,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }, [_vm._v("Close")])])], 2)])])
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -4143,7 +4189,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "mdl-ripple"
 	  })])])
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -4179,7 +4224,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    })
 	  })), _vm._v(" "), _vm._t("default")], 2)
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -4394,7 +4438,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }, [_vm._t("default")], 2)
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
@@ -4516,7 +4559,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    staticClass: "material-icons"
 	  }, [_vm._v(_vm._s(_vm.deleteIcon))])]) : _vm._e()], 2)
 	},staticRenderFns: []}
-	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
