@@ -2027,6 +2027,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    fireFocusEvent: function fireFocusEvent(event) {
 	      this.$emit('focus', event);
+	    },
+	    focus: function focus() {
+	      this.$refs.focusTarget.focus();
+	      return this;
+	    },
+	    select: function select() {
+	      this.$refs.focusTarget.select();
+	      return this;
+	    },
+	    blur: function blur() {
+	      this.$refs.focusTarget.blur();
+	      return this;
 	    }
 	  },
 	  mounted: function mounted() {
@@ -2352,6 +2364,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      'mdl-textfield__expandable-holder': _vm.expandable
 	    }
 	  }, [(_vm.textarea) ? _vm._t("textarea", [_c('textarea', {
+	    ref: "focusTarget",
 	    staticClass: "mdl-textfield__input",
 	    attrs: {
 	      "type": "text",
@@ -2370,6 +2383,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "focus": _vm.fireFocusEvent
 	    }
 	  })]) : _vm._t("input", [_c('input', {
+	    ref: "focusTarget",
 	    staticClass: "mdl-textfield__input",
 	    attrs: {
 	      "type": _vm.type,
